@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Rejestracja</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .form {
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+        .name {
+            margin-bottom: 20px;
+        }
+
+        .checkbox {
+            display: flex;
+        }
+
+        .checkbox p {
+            width: 150px;
+        }
+
+        .adres {
+
+            margin-top: 20px;
+        }
+
+        .form-select {
+            width: 160px;
+        }
+
+        .adres {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap:wrap;
+            margin-bottom: 15px;
+        }
+        .city {
+            margin-right: 10px;
+            flex-grow: 4;
+        }
+        .region {
+            margin-right: 10px;
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body class="form">
+<H1>Rejestracja</H1>
+<div class="name">
+    <label for="exampleFormControlInput1" class="form-label">Imie</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"
+           placeholder="Wpisz imię">
+</div>
+<div class="name">
+    <label for="exampleFormControlInputNazwisko" class="form-label">Nazwisko</label>
+    <input type="text" class="form-control" id="exampleFormControlInputNazwisko"
+           placeholder="Wpisz nazwisko">
+</div>
+<div class="checkbox">
+    <div><p>Płeć</p> </div>
+    <div class="mb-3">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+        <label class="form-check-label" for="flexRadioDefault1"> Kobieta </label>
+
+        <div class="mb-3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">Mężczyzna</label>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput6" class="form-label">Adres Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput6" placeholder="Wpisz adres @mail">
+</div>
+<label for="inputPassword5" class="form-label">Hasło</label>
+<input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text">
+    Min. 8 znaków
+</div>
+
+<div class="adres" >
+    <div class="city">
+        <label for="exampleFormControlInput5" class="form-label">Miasto</label>
+        <input type="text" class="form-control" id="exampleFormControlInput5"
+               placeholder="Miasto">
+    </div>
+    <div class="region">
+        <label class="form-label">Województwo</label>
+        <select class="form-select" aria-label="Default select example" id="woje">
+            <option selected>Województwo</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <div class="postCode">
+        <label for="exampleFormControlInput1kod" class="form-label">Kod pocztowy</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1kod"
+               placeholder="Kod pocztowy">
+    </div>
+</div>
+<div class="checkbox2">
+    <div class="mb-3">
+        <input class="form-check-input1" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3"> Akceptuje regulamin </label>
+    </div>
+    <div class="mb-3">
+        <input class="form-check-input1" type="radio" name="flexRadioDefault1" id="flexRadioDefault4" checked>
+        <label class="form-check-label" for="flexRadioDefault4">Wyrażam zgodę na ostrzymywanie informacji marketingowych</label>
+    </div>
+</div>
+<div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Rejestruj</button>
+</div>
+</body>
+</html>
